@@ -1,0 +1,54 @@
+body {
+    font-family:'Segoe UI', Tahoma;
+
+}
+table {
+    width: 60%;
+    border-collapse: collapse;
+}
+thead, tfoot {
+    background-color: #cecece;
+    border-bottom: solid 2px #000;
+}
+.centralizado {
+    text-align: center;
+}
+.direita {
+    text-align: right;
+}
+.comBorda {
+    border-style: solid; 
+    border-color: black; 
+    border-width: 2px;
+}
+.celula {
+    border-right-style: solid; 
+    border-right-color: black; 
+    border-right-width: 1px;
+}
+tbody .celula:hover {
+    background-color: bisque;
+}
+tbody tr {
+    background-image: linear-gradient(to right, #dedede, #fff);
+}
+
+tbody tr:nth-child(even) {
+        background-image: linear-gradient(to right,#fff, #dedede);
+}
+a:link {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #000;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #000;
+    text-decoration: underline;
+    font-weight: bolder;
+  }

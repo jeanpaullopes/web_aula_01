@@ -1,0 +1,41 @@
+table {
+            
+    width: 100%;
+    border-collapse: collapse;
+    
+   
+}
+thead, tfoot {
+    background-color: rgb(201, 207, 213);
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+th {
+    background-color: #df0808;
+    color: #FFF;
+    border-left: 1px #ffffff solid;
+}
+tr:nth-child(even) {
+    background-image: linear-gradient(#fff, #df0808);
+    color: #fff;
+}
+tr {
+    color: #df0808;
+    background-color: #fff;
+}
+td {
+    padding-left: 5px;
+    border-left: 1px #dedede solid;
+    border-bottom: 1px #dedede solid;
+}
+
+.numbers {
+    text-align: right;
+}
+.left {
+    text-align: left;
+}
+
+li :hover {
+    background-color: aquamarine;
+}

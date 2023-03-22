@@ -1,0 +1,28 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+table {
+    width: 90%;
+}
+p {
+    margin-top: 0px;
+    vertical-align: top;
+}
+.col1 {
+    
+    font-family: 'Roboto', sans-serif;
+}
+
+.col2 {
+    
+    padding-top: 0px;
+    background-color: black;
+    color: white;
+    padding-right: 20px;
+}
+.alinDir {
+    text-align: right;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Tilt+Prism&display=swap');

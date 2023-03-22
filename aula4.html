@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #visor {
+            border: 2px solid #000;
+            text-align: right;
+            width: 200px;
+        }
+        .botao {
+            border: 1px solid #000;
+            border-radius: 3px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+        
+
+        function clique() {
+            console.log(new Number(document.getElementById('valor1').value))
+            document.getElementById('resultado').innerHTML = new Number(document.getElementById('valor1').value)
+                                                            +
+                                                            new Number(document.getElementById('valor2').value)
+        }
+        /*
+        funcao clickBtn
+        parametros: num - número a ser incluido no visor
+
+        comportamento:
+        concatena o valor recebido pelo parametro num ao innerHTML da div visor
+        */
+        function cliqueBtn(num) {
+            //console.log(num)
+            if (document.getElementById('visor').innerHTML == '0') {
+                document.getElementById('visor').innerHTML = ''
+            }
+            document.getElementById('visor').innerHTML = document.getElementById('visor').innerHTML + num
+        }
+        
+    </script> 
+    <div id="visor">0</div>
+    <table>
+        <tr>
+            <td class="botao" onclick="cliqueBtn(1)">1</td>
+            <td class="botao" onclick="cliqueBtn(2)">2</td>
+            <td class="botao" onclick="cliqueBtn(3)">3</td>
+        </tr>
+        <tr>
+            <td class="botao" onclick="cliqueBtn(4)">4</td>
+            <td class="botao" onclick="cliqueBtn(5)">5</td>
+            <td class="botao" onclick="cliqueBtn(6)">6</td>
+        </tr>
+        <tr>
+            <td class="botao">7</td>
+            <td class="botao">8</td>
+            <td class="botao">9</td>
+        </tr>
+        <tr>
+            <td class="botao">.</td>
+            <td class="botao">0</td>
+            <td class="botao"> </td>
+        </tr>
+
+
+
+
+    </table>
+    valor1: <input type="number" id="valor1"/><br/>
+    valor2:  <input type="number" id="valor2"/><br/>
+    <button id="btnigual" onclick="clique()">
+        =</button>
+     <span id="resultado"></span>
+
+
+</body>
+</html>

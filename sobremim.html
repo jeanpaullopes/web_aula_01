@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem sou eu</title>
+    <style>
+
+        body {
+            
+            color: #404040;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .nome {
+            text-align: center;
+            font-size: 48pt;
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        .titulo {
+            font-weight: bolder;
+            text-decoration:overline;
+        }
+        .card {
+            width: 80%;
+            border: 1px solid rgb(102, 84, 84);
+            border-left: 12px solid rgb(102, 84, 84);
+        
+            padding: 10px;
+            padding-left: 20px;
+            margin-bottom: 30px;
+            background-color: rgba(102, 84, 84, 0.422);
+            box-shadow: 10px 10px 5px rgb(224, 228, 230);
+        }
+    </style>
+
+    <script>
+        console.log("olá 'mundo'");
+        console.log("olá de novo")
+        console.log('mais um "log" no console')
+        let i = 1
+    </script>
+
+</head>
+<body>
+    <script>
+        console.log('um log no inicio do body '+i)
+        i++
+    </script>
+    <div class="nome">Jean Paul</div>
+    <hr/>
+    <h2>Formação</h2>
+    <h3>Faculdades QI</h3> 
+    Análise e desenvolvimento de software
+    <h2>Atividades</h2>
+    <div class="card">
+        <p >
+            <strong>UniRitter</strong>
+            <p>
+                Professor Assistente
+                <ul>
+                    <li>Algoritimos</li>
+                    <li>Programação OO</li>
+                    <li>Programação Web</li>
+                    <li>desenvolvimento Mobile</li>
+                    <li>Engenharia de software</li>
+                </ul>
+            </p>
+        </p>
+    </div>
+    <div class="card">
+        <p>
+            <strong>Ânima Educação</strong>
+            <p class="titulo">
+                Professor em Jornada Ânima Hub
+                <ul>
+                    <li>Líder Laboratórios UniRitter</li>
+                    <li>Líder Laboratórios UniFACS</li>
+                    <li>Orientador de Squads
+                        <ul>
+                            <li>Blitzkrieg - sistema de inscrição</li>
+                            <li> LIEM - Banco de dados de migrantes</li>
+                            <li>ZiggyStardust - Indicadores Stricto</li>
+                        </ul>
+                    </li>
+                    <li>Mentor projeto PMI PowerPlatform Hub</li>
+                </ul>
+            </p>
+        </p>
+    </div>
+    <script>
+        console.log('um log no final do body '+i)
+    </script>
+</body>
+</html>
