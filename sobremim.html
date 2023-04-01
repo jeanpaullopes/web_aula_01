@@ -16,7 +16,7 @@
             text-align: center;
             font-size: 48pt;
             color: white;
-            text-shadow: 2px 2px 4px #000000;
+            text-shadow: 2px 2px 4px #53e536;
         }
         .titulo {
             font-weight: bolder;
@@ -24,30 +24,35 @@
         }
         .card {
             width: 80%;
+           
             border: 1px solid rgb(102, 84, 84);
             border-left: 12px solid rgb(102, 84, 84);
-        
+            
             padding: 10px;
             padding-left: 20px;
             margin-bottom: 30px;
             background-color: rgba(102, 84, 84, 0.422);
             box-shadow: 10px 10px 5px rgb(224, 228, 230);
         }
+        .cardCurto {
+            height: 50px;
+            overflow-y: scroll;
+        }
     </style>
 
     <script>
+        let i
+        let a = i = 0
         console.log("olá 'mundo'");
-        console.log("olá de novo")
-        console.log('mais um "log" no console')
-        let i = 1
+       
+
+        console.log(a)
+        
     </script>
 
 </head>
 <body>
-    <script>
-        console.log('um log no inicio do body '+i)
-        i++
-    </script>
+
     <div class="nome">Jean Paul</div>
     <hr/>
     <h2>Formação</h2>
@@ -69,7 +74,7 @@
             </p>
         </p>
     </div>
-    <div class="card">
+    <div class="card cardCurto" id="elemento" onclick="troca()">
         <p>
             <strong>Ânima Educação</strong>
             <p class="titulo">
@@ -90,7 +95,27 @@
         </p>
     </div>
     <script>
-        console.log('um log no final do body '+i)
+
+        teste()
+        function teste() {
+            if (i === "0") {
+                console.log('é igual')
+            } else {
+                console.log('é diferente')
+            }
+        }
+
+        function troca() {
+            
+            let d = document.getElementById('elemento');
+            console.log(d)
+            if (d.classList.contains('cardCurto')){
+                d.classList.remove('cardCurto')
+            } else {
+                d.classList.add('cardCurto')
+            }
+            //d.innerHTML = 'olá mundo<br/>eu estou na aula de HTML'
+        }
     </script>
 </body>
 </html>

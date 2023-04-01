@@ -18,33 +18,14 @@
         }
     </style>
 </head>
-<body>
-    <script>
+<body onload="load()">
 
-        
+    <img src="https://picsum.photos/200/300" alt="imagem aleatória"/>
+    <div id="campoDados">
 
-        function clique() {
-            console.log(new Number(document.getElementById('valor1').value))
-            document.getElementById('resultado').innerHTML = new Number(document.getElementById('valor1').value)
-                                                            +
-                                                            new Number(document.getElementById('valor2').value)
-        }
-        /*
-        funcao clickBtn
-        parametros: num - número a ser incluido no visor
+    </div>
+    <script src="scripts.js"></script>
 
-        comportamento:
-        concatena o valor recebido pelo parametro num ao innerHTML da div visor
-        */
-        function cliqueBtn(num) {
-            //console.log(num)
-            if (document.getElementById('visor').innerHTML == '0') {
-                document.getElementById('visor').innerHTML = ''
-            }
-            document.getElementById('visor').innerHTML = document.getElementById('visor').innerHTML + num
-        }
-        
-    </script> 
     <div id="visor">0</div>
     <table>
         <tr>
@@ -63,7 +44,7 @@
             <td class="botao">9</td>
         </tr>
         <tr>
-            <td class="botao">.</td>
+            <td class="botao" onclick="olaMundo()">.</td>
             <td class="botao">0</td>
             <td class="botao"> </td>
         </tr>
