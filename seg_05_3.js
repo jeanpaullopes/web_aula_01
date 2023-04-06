@@ -1,0 +1,1 @@
+console.log('antes do p3 ' + a + b)
