@@ -1,21 +1,19 @@
-console.log(data.length)
-/*
-for (i=0; i < data.length; i++) {
-    console.log(data[i].name)
-}
-data.forEach(function(elem){
-    console.log(elem.name)
-})
-data.forEach(function(elem, i){
-    console.log(i + ' '+ elem.name)
-})
-data.forEach((e) => console.log(e.name) )
- 
-*/
-let bancoDeDados = new Array()
-data.forEach(function(elem) {
+const repositorio = new Repositorio()
+
+
+dadosUsers.forEach(function(elem) {
     let obj = new User(elem)
-    bancoDeDados.push(obj)
+    repositorio.addUser(obj)
+})
+dadosTodos.forEach((p)=> {
+    let obj = new Todo(p)
+    repositorio.addTodo(obj)
+})
+
+console.log(repositorio)
+let divUsers = document.getElementById('divUsers')
+repositorio.users.forEach((v,k)=>{
+    divUsers.innerHTML = divUsers.innerHTML + UserView.toHTML(v)
 })
 /*
 console.log(data)
