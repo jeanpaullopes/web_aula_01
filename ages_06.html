@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .olho {
+            height: 16px;
+            width: 16px;
+            cursor: pointer;
+        }
+        .olho:hover {
+            height: 24px;
+            width: 24px;
+        }
+        .bold {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body onload="//load()">
+    <script>
+        function load() {
+            console.log(user)
+            user = {
+                login: document.getElementById('edLogin').value,
+                nome: document.getElementById('edNome').value,
+                senha: document.getElementById('edSenha').value,
+                }
+            console.log(user)
+            storage.setItem('usuario', JSON.stringify(user))
+            carrega(user)
+        }
+
+    </script>
+    <div id="corpo">corpo</div>
+    Login: <input id="edLogin"/><br/>
+    Nome: <input id="edNome"/><br/>
+    senha: <input id="edSenha" type="password"/> 
+    <span style="text-decoration: underline;"
+     onmouseover="document.getElementById('edSenha').type='text';" 
+     onmouseleave="document.getElementById('edSenha').type='password';">
+    <img class="olho" src="https://png.pngtree.com/png-vector/20190118/ourlarge/pngtree-vector-eye-icon-png-image_326752.jpg"/>
+    </span><br/>
+    <button onclick="load()">Cadastrar</button>
+    <button onclick="alert(JSON.stringify(user))">mostra</button>
+
+
+    <script src="ages_06.js"></script>
+    <a href="ages_06_copy.html">vai para a copy</a><br/>
+    <a href="https://google.com/search?q=anima educação">vai para o google</a>
+</body>
+</html>
