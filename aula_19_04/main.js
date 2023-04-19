@@ -43,7 +43,7 @@ const repositorio = new Repositorio( a )
 ContatoView.rebildTBody( repositorio.getAllContatos(), tbody )
 
 btnClick.onclick = ()=>{
-    div1.appendChild( ContatoView.formContato( ))
+    div1.appendChild( ContatoView.formContato( repositorio.getContato('55 55555.552')))
 }
 
 
