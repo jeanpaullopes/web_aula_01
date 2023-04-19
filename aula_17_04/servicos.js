@@ -4,7 +4,7 @@ const servicos = {
     constroiTableContatos(repo, tbody) {
         repo.getAllContatos().forEach((c) => tbody.appendChild(ContatoView.toTR(c)) )
     },
-    cadastrar() {
+    cadastrar(repo, tbody) {
         let temp = {
             nome: document.getElementById('inNome').value,
             fone: document.getElementById('inFone').value, 

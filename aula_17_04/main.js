@@ -1,5 +1,5 @@
-import { Contato, Repositorio, ContatoView, servicos } from "./classes.js"
-//import { servicos } from "./servicos.js"
+import { Contato, Repositorio, ContatoView } from "./classes.js"
+import { servicos } from "./servicos.js"
 
 //constantes que representam os elementos do HTML
 const tbody = document.getElementById('tBodyAgenda')
